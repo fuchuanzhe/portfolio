@@ -21,12 +21,14 @@ h1 {
 
 .nav {
   margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;       /* allows wrapping on small screens */
+  gap: 1.5rem;           /* spacing between items */
 }
 
 .nav a {
   font-family: 'Tiny5', sans-serif;
   font-size: 1.5em;
-  margin-right: 30px;
   font-weight: normal;
   text-decoration: none;
   color: #494949;
