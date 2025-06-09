@@ -23,7 +23,7 @@ h1 {
   margin-bottom: 0.5rem;
   display: flex;
   flex-wrap: wrap;       /* allows wrapping on small screens */
-  gap: 1.5rem;           /* spacing between items */
+  gap: 2.4rem;           /* spacing between items */
 }
 
 .nav a {
