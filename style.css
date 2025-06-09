@@ -20,16 +20,16 @@ h1 {
 }
 
 .nav {
-  margin-top: 2em;
+  margin-top: 0.5em;
 }
 
 .nav a {
   font-family: 'Tiny5', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-right: 15px;
-  font-weight: 600;
+  font-weight: normal;
   text-decoration: none;
-  color: #000;
+  color: #494949;
 }
 
 .nav a:hover {
