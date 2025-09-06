@@ -17,11 +17,12 @@ body {
   font-size: 4em; 
   font-weight: normal;
   margin-bottom: 0.5rem;
+  display: inline-block;
 }
 
 .title-block img {
-  width: 100%;  
-  height: auto;
+  max-width: 100%;
+  width: auto;
   display: block;
 }
 
