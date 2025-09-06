@@ -7,6 +7,24 @@ body {
   padding: 40px 20px;
 }
 
+.title-block {
+  display: inline-block; 
+  text-align: left;   
+}
+
+.title-block h1 {
+  font-family: 'Tiny5', sans-serif;
+  font-size: 4em; 
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.title-block img {
+  width: 100%;  
+  height: auto;
+  display: block;
+}
+
 .container {
   max-width: 720px;
   margin: auto;
