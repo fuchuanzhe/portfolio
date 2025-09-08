@@ -12,9 +12,14 @@ body {
   margin: auto;
 }
 
-.container img {
+.top-img {
   display: block;
   margin-bottom: -0.5rem;
+}
+
+.container img {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 
