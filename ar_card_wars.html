@@ -30,46 +30,59 @@
     <img src="images/prototyping.jpeg" alt="Initial prototype" style="max-width: 100%;" />
     <p>
       The prototype is built in Unity and was tested on a Honor 70 phone. 
-      As ARFoundation is used, it supports most of the modern Android and iOS devices (see [Supported Deveices](https://developers.google.com/ar/devices)). 
+      As ARFoundation is used, it supports most of the modern Android and iOS devices (see <a href="https://developers.google.com/ar/devices" target="_blank">Supported Deveices</a>). 
+    </p>
+    <p>
       I originally wanted to build it for Meta Quest headsets to take advantage of their immersive gameplay potential. 
       However, the fundamental componenet would require image tracking, which is not currently effeciently supported in Quest devices (though I believe soon new features will be able to support it). 
       In the future, it would be exciting to expand the project to more VR/AR devices (especially AR glasses) for a more immersive experience.
     </p>
 
     <h2>requirements:</h2>
-    <p>
-    **Requirement 1: Track cards and spawn the corresponding model**  
-
-    **Requirement 2: Detect horizontal plane and spawn the game field**  
-
-    **Requirement 3: Detect actions performed on cards**  
-    
-    **Requirement 4: Move, rotate, and scale models**  
-
-    </p>
+    <ul>
+      <li><strong>Requirement 1:</strong> Track cards and spawn the corresponding model</li>
+      <li><strong>Requirement 2:</strong> Detect horizontal plane and spawn the game field</li>
+      <li><strong>Requirement 3:</strong> Detect actions performed on cards by users</li>
+      <li><strong>Requirement 4:</strong> Move, rotate, and scale models according to user actions</li>
+    </ul>
 
     <h2>solution:</h2>
-    <p>
-      **AR Tracked Image Manager**
-      - Used AR Tracked Image Manager to recognise specific cards from a predefined library. Each recognised card triggers a listener that instantiates the corresponding prefab with the right position, rotation, and scale.  
+    <ul>
+      <li><strong>AR Tracked Image Manager</strong>
+        <ul>
+          <li>Used AR Tracked Image Manager to recognise specific cards from a predefined library. </li>
+          <li>Each recognised card triggers a listener that instantiates the corresponding prefab with the right position, rotation, and scale. </li>
+        </ul>
+      </li>
 
-      **AR Plane Manager**
-      - Combined **AR Plane Manager** and **AR Raycast Manager**. The plane manager detects flat surfaces (horizontal in this case), while the raycast manager translates user taps on the screen into real-world positions on the plane.  
+      <li><strong>AR Plane Manager and AR Raycast Manager</strong>
+        <ul>
+          <li>The plane manager detects flat surfaces (horizontal in this case), while the raycast manager translates user taps on the screen into real-world positions on the plane. </li>
+        </ul>
+      </li>
 
-      **Euler Angles**
-      -Implemented card rotation to simulate the “floop” action from the show (rotating a card 90° to trigger a special move). The prototype detects when a card is rotated perpendicular to the field and plays a simple animation to demonstrate the effect.  
-      
-      **Lean Touch**
-      - Integrated Lean Touch, which made it easy to add pinch-to-scale, drag-to-move, and twist-to-rotate interactions. These components were attached directly to the game field prefab for intuitive manipulation.  
-    </p>
+      <li><strong>Euler Angles</strong>
+        <ul>
+          <li>Implemented card rotation to simulate the “floop” action from the show (rotating a card 90° to trigger a special move). </li>
+          <li>The prototype detects when a card is rotated perpendicular to the field and plays a simple animation to demonstrate the effect. </li>
+        </ul>
+      </li>
+
+      <li><strong>Lean Touch</strong>
+        <ul>
+          <li>Integrated Lean Touch, which made it easy to add pinch-to-scale, drag-to-move, and twist-to-rotate interactions. </li>
+          <li>These components were attached directly to the game field prefab for intuitive manipulation. </li>
+        </ul>
+      </li>
+    </ul>
 
     <h2>areas of improvement:</h2>
-    <p>
-      - Add support for VR/AR headsets (e.g., Meta Quest, AR glasses) for a more immersive experience.  
-      - Expand the card library to include more characters, attacks, and effects.  
-      - Replace placeholder animations with more complex battle sequences.  
-      - Add multiplayer support so players can battle against each other in AR.  
-    </p>
+    <ul>
+      <li>Add support for VR/AR headsets (e.g., Meta Quest, AR glasses) for a more immersive experience. </li>
+      <li>Expand the card library to include more characters, attacks, and effects. </li>
+      <li>Replace placeholder animations with more complex battle animations. </li>
+      <li>Add multiplayer support so players can battle against each other in AR. </li>
+    </ul>
 
   </div>
 </body>
